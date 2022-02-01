@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+group = 'com.xxx.webutilities'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    compileOnly 'javax:javaee-api:7.0'
+    implementation 'io.github.classgraph:classgraph:4.8.138'
+}
+
+test {
+    useJUnitPlatform()
+}

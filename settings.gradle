@@ -1,0 +1,5 @@
+rootProject.name = 'ClassLoaderSample'
+include 'WebSample'
+include 'WebUtilities'
+include 'TestEAR'
+

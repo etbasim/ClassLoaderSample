@@ -1,0 +1,10 @@
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'javax:javaee-api:7.0'
+    providedCompile project(path: ':WebUtilities')
+}

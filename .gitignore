@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.gradle/
+container/
+build/
+**/WEB-INF/classes/
+*.class
+*.jar
+*.war
+*.ear
+.idea/
+!gradle/wrapper/gradle-wrapper.jar

@@ -1,0 +1,12 @@
+plugins {
+    id 'ear'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    deploy project(path: ':WebSample', configuration: 'archives')
+    earlib project(path: ':WebUtilities')
+}

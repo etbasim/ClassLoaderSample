@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  app:
+    image: open-liberty:full
+    ports:
+      - 9080:9080
+      - 9443:9443
+      - 7777:7777
+    volumes:
+      - ./container/logs:/logs/
+      - ./server.xml:/config/server.xml
+      - ./jvm.options:/config/jvm.options
+      - ./TestEAR/build/libs/:/config/dropins/
